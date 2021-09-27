@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>Account Setting</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+
+
+        <script type="text/javascript">
+
+
+        function Newjob() {
+            
+
+            document.getElementById("NewJob" ).style.display="block"
+            document.getElementById("JobList").style.display="none"
+
+            
+
+            
+        }
+
+        function JobList() {
+
+        
+            document.getElementById("NewJob" ).style.display="none"
+            document.getElementById("JobList").style.display="block"
+
+
+
+
+}
+        
+        function bulid() {
+            debugger
+         
+            var div1 =document.getElementById("DevelopmentJobs")
+            var div2=div1.getElementsByClassName("ContentRow")[0]
+            var newDiv=document.getElementsByTagName("div")[0]
+            newDiv.setAttribute("class","TasksBox")
+            div2.appendChild(newDiv)
+           
+              
+            var span1 =document.getElementsByTagName("span")
+            var span2 =document.getElementsByTagName("span")
+            var span3 =document.getElementsByTagName("span")
+
+            newDiv.appendChild(span1)
+            newDiv.appendChild(span2)
+            newDiv.appendChild(span3)
+
+            var title=document.getElementById("txtJobTitle").value
+            var titleValue=document.createTextNode(title)
+
+            var type=document.getElementById("JobType").value
+            var typeValue=document.createTextNode(type)
+
+            var Location=document.getElementById("ddlJobLocation").value
+            var locValue=document.createTextNode(location)
+            
+            span1.appendChild(titleValue)
+            span2.appendChild(typeValue)
+            span3.appendChild(locValue)
+
+
+        }
+         function locationType(loc) {
+              var Design=document.getElementById("DesignJobs")
+              var Development=document.getElementById("DevelopmentJobs")
+               var x=getElementsByClassName("JobElementLocation")
+              
+
+         }
+        
+        
+        
+        </script>
+    
+    </head>
+    <body>
+<div class="ContentBox">
+<div class="Menu">
+<div class="MenuItems" >
+    <span class="MenuText"  onclick=" Newjob(this)">New Job</span>
+</div>
+<div class="MenuItems" >
+    <span class="MenuText"  onclick=" JobList(this)">Job List</span>
+</div>
+</div>
+<div class="Content" >
+
+    <div id="NewJob" class="ContentDev">
+
+
+    <div class="ContentRow">
+    <span>
+        Job Title
+    </span>
+    <div class="Row">
+        <input type="text" id="txtJobTitle" />
+    </div>
+</div>
+<div class="ContentRow">
+    <span>
+        Type of Job
+    </span>
+    <div class="Row">
+        <select class="FormCountrol" id="JobType">
+            <option>Design</option>
+            <option>Development</option>
+        </select>
+    </div>
+</div>
+<div class="ContentRow">
+    <span>
+        Location
+    </span>
+    <div class="Row">
+        <select class="FormCountrol" id="ddlJobLocation" >
+            <option>USA</option>
+            <option>Jordan</option>
+        </select>
+    </div>
+</div>
+<div class="actionBar">
+    <div class="SaveChangesBox">
+        <button class="btn ButtonSubmit"  onclick=" bulid()">Save Changes</button>
+    </div>
+    <div class="CancelBox">
+        <button class="btn btn-default" >Cancel</button>
+    </div>
+</div>
+</div>
+
+
+
+<div id="JobList" class="ContentDev" style="display: none;">
+
+
+    <div class="ContentRow">
+        <span>
+            Location
+        </span>
+        <div class="Row">
+            <select class="FormCountrol" id="JobLocation" style="width: 30%;" onchange="locationType()" >
+                <option>ALL</option>
+                <option>USA</option>
+                <option>Jordan</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="SubTitleBlock">
+        <span class="SubTitleText">Design</span>
+    </div>
+    <div id="DesignJobs">
+    <div class="ContentRow">
+        <div class="Row">
+            <div class="TasksBox">
+                <span class="JobElementTitle">Senior Graphic Designer</span>
+                <span class="JobElementType">Full Time</span>
+                <span class="JobElementLocation">USA</span>
+            </div>
+        </div>
+    </div>
+    <div class="ContentRow">
+        <div class="Row">
+            <div class="TasksBox">
+                <span class="JobElementTitle">Senior Graphic Designer</span>
+                <span class="JobElementType">Full Time</span>
+                <span class="JobElementLocation">Jordan</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="SubTitleBlock">
+    <span class="SubTitleText">Development</span>
+</div>
+<div id="DevelopmentJobs">
+<div class="ContentRow">
+    <div class="Row">
+        <div class="TasksBox">
+            <span class="JobElementTitle">.NET Developer</span>
+            <span class="JobElementType">Full Time</span>
+            <span class="JobElementLocation">Jordan</span>
+        </div>
+    </div>
+</div>
+<div class="ContentRow">
+    <div class="Row">
+        <div class="TasksBox">
+            <span class="JobElementTitle">.NET Developer</span>
+            <span class="JobElementType">Full Time</span>
+            <span class="JobElementLocation">USA</span>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+
+  
+  
+</div>
+</div>
+
+
+    </body>
+</html>

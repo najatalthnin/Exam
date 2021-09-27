@@ -1,0 +1,183 @@
+body{
+    background-color: #EEEE;
+    width: 98%;
+}
+
+.ContentBox{
+    border: 1px solid gray;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-right: 15%;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.Menu{
+float: left;
+width: 26%;
+}
+.Content{
+    float: left;
+    width: 70%;
+    margin-left: 3%;
+}
+
+.MenuItems
+{
+    border-bottom: 1px solid #E6ECF3;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.MenuText{
+
+    color: #676767;
+    font-size: 18px;
+}
+
+.MenuItems:hover
+{
+    background-color: #F0F0F0;
+}
+
+
+.ContentDev{
+    margin-top: 4%;
+}
+.ContentRow{
+    margin-top: 2%;
+    width: 90%;
+}
+
+.Row{
+    margin-top: 1%;
+}
+
+input[type=text]{
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #555555;
+    }
+
+input[type=text]:focus{
+    border-color: #66afe9;
+    outline: 0;
+}
+
+
+
+
+.FormCountrol{
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #555555;
+    }
+
+.FormCountrol:focus{
+    border-color: #66afe9;
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+.ButtonSubmit:hover{
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+
+
+
+
+
+
+.btn{
+    color: #ffffff; 
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ButtonSubmit{
+    width: 150px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+
+
+.actionBar{
+    margin-top: 2%;
+    height: 7%;
+}
+
+.SaveChangesBox{
+    margin-left: 57%;
+    float: left;
+}
+.CancelBox{
+    margin-left: 1%;
+    float: left;
+}
+
+.btn-default {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    width: 75px;
+    padding: 10px 0 10px 0;
+  }
+
+  .SubTitleBlock{
+    margin-top: 6%;
+  }
+  .SubTitleText{
+      font-weight: bold;
+      font-size: 20px;
+  }
+  span{
+      color: #212529;
+      font-weight: 400;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+  .TasksBox{
+    background-color: #eee;
+    padding: 25px 10px;
+    width: 650px;
+}
+.JobElementTitle{
+    display: inline-block;
+    width:200px;
+}
+.JobElementLocation{
+    margin-left: 15%;
+    display: inline-block;
+    width:100px;
+}
+.JobElementType{
+    margin-left: 15%;
+    display: inline-block;
+    width:100px;
+}
